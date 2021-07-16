@@ -12,3 +12,43 @@ html {
     font-size: 10px;
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
+
+body {
+    display: grid;
+    grid: 48px 1fr / 1fr
+}
+
+header > a > img {
+    height: 24px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+body > header {
+    display: grid;
+    grid: 1fr / 108px 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+    background: #1a599c;
+    color: #fff;
+}
+
+body > header > a {
+    width: 108px;
+    height: 32px;
+}
+
+#search-videos-icon,
+#settings-icon {
+    width: 28px;
+}
+
+.two-icons-container {
+    display: grid;
+    grid: 1fr / 1fr 1fr;
+    column-gap: 10px;
+}
