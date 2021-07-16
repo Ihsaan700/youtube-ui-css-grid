@@ -20,6 +20,7 @@ body {
 
 header > a > img {
     height: 24px;
+    padding-left: 6px;
 }
 
 h1 {
@@ -51,4 +52,30 @@ body > header > a {
     display: grid;
     grid: 1fr / 1fr 1fr;
     column-gap: 10px;
+}
+
+body > main {
+    display: grid;
+    grid: 
+    'thumbnail' max-content
+    'details' max-content
+    'related-videos' max-content
+    'comments' max-content
+    / 1fr;
+}
+
+#video-thumbnail {
+    grid-area: thumbnail;
+}
+
+#video-details {
+    grid-area: details;
+}
+
+#related-videos {
+    grid-area: related-videos;
+}
+
+#video-comments {
+    grid-area: comments;
 }
