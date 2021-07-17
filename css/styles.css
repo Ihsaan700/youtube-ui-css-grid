@@ -86,7 +86,8 @@ h2 {
 }
 
 #video-details > header,
-#video-details > div {
+#video-details > div,
+#related-videos {
     padding-left: 12px;
     padding-right: 12px;
 }
@@ -186,6 +187,44 @@ a {
 
 #related-videos {
     grid-area: related-videos;
+}
+
+#related-videos > header {
+    display: grid;
+    grid: 1fr / 1fr repeat(2, max-content);
+    gap: 8px;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 1.4rem;
+}
+
+#related-videos > header button {
+    width: 37px;
+    height: 14px;
+    border: 0;
+    outline: none;
+    background: transparent;
+    position: relative;
+}
+
+.autoplay-slider {
+    display: block;
+    width: 37px;
+    height: 14px;
+    border: 7px solid rgba(26,89,156, 0.38);
+    border-radius: 7px;
+}
+
+.autoplay-slider-toggle-button {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -3px;
+    border-radius: 100%;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
 }
 
 #video-comments {
