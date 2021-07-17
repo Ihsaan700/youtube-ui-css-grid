@@ -85,7 +85,8 @@ h2 {
     font-weight: normal;
 }
 
-#video-details > header {
+#video-details > header,
+#video-details > div {
     padding-left: 12px;
     padding-right: 12px;
 }
@@ -124,6 +125,63 @@ h2 {
 
 .social-item > p {
     font-size: 1.2rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    line-height: 1.75rem;
+    margin-bottom: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+#channel-details {
+    display: grid;
+    grid: 1fr / 1fr 114px;
+    column-gap: 8px;
+    align-items: center;
+    padding: 12px 0;
+    border-top: 1px solid rgba(136, 136, 136, 0.4);
+    border-bottom: 1px solid rgba(136, 136, 136, 0.4);
+}
+
+#channel-details > a {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 8px;
+}
+
+
+#channel-details img {
+    width: 34px;
+    height: 34px;
+}
+
+
+#channel-subscriber-count {
+    color: rgba(17, 17, 17, 0.6);
+    font-size: 1.2rem;
+}
+
+#channel-details button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 8px;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 1.4rem;
+    color: #1a599c;
+    text-transform: uppercase;
+    outline: none;
+}
+
+#channel-details button > img {
+    height: 16px;
 }
 
 #related-videos {
