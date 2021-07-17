@@ -230,7 +230,33 @@
                         </li>
                     </ul>
             </aside>
-            <section id="video-comments">comments</section>
+            <section id="video-comments">
+                <header>
+                <h2>Comments &middot; 3</h2>
+                <img id="comment-downtick" src="images/icons/down-tick.svg" alt="Show Comments" />
+                <img id="comment-uptick" src="images/icons/up-tick.svg" alt="Hide Comments" />
+                </header>
+                <div id="comment-list-container">
+                    
+                </div>
+            </section>
         </main>
+        <script>
+            const downTickButton = document.getElementById('comment-downtick');
+            const upTickButton = document.getElementById('comment-uptick');
+            const commentListContainer = document.getElementById('comment-list-container');
+        
+            downTickButton.addEventListener('click', () => {
+                downTickButton.style.display = 'none';
+                upTickButton.style.display = 'block';
+                commentListContainer.style.display = 'block';
+            });
+        
+            upTickButton.addEventListener('click', () => {
+                downTickButton.style.display = 'block';
+                upTickButton.style.display = 'none';
+                commentListContainer.style.display = 'none';
+            });
+        </script>
     </body>
 </html>

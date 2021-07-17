@@ -87,7 +87,8 @@ h2 {
 
 #video-details > header,
 #video-details > div,
-#related-videos {
+#related-videos,
+#video-comments {
     padding-left: 12px;
     padding-right: 12px;
 }
@@ -268,4 +269,21 @@ a {
 
 #video-comments {
     grid-area: comments;
+}
+
+#video-comments > header {
+    display: grid;
+    grid: 1fr / 1fr 24px;
+    align-items: center;
+}
+
+#video-comments h2 {
+    font-weight: bold;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#comment-uptick,
+#comment-list-container {
+    display: none;
 }
