@@ -287,3 +287,31 @@ a {
 #comment-list-container {
     display: none;
 }
+
+#comment-form {
+    display: grid;
+    grid: 1fr / 48px 1fr;
+    column-gap: 8px;
+    margin-top: 16px;
+    padding: 12px;
+    border-bottom: 1px solid rgba(136, 136, 136, 0.4);
+}
+
+#comment-form img {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+}
+
+#comment-form textarea {
+    padding: 6px;
+    outline: none;
+    color: #111;
+    font-size: 1.4rem;
+    resize: vertical;
+    border: 1px solid rgba(135, 135, 135, 0.4);
+}
+
+#comment-form textarea::placeholder {
+    color: rgba(135, 135, 135, 0.4);
+}

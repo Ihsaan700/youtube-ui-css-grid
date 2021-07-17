@@ -237,8 +237,14 @@
                 <img id="comment-uptick" src="images/icons/up-tick.svg" alt="Hide Comments" />
                 </header>
                 <div id="comment-list-container">
-                    
-                </div>
+                    <div id="comment-form">
+                        <img src="images/profiles/kim.jpeg" alt="Kim" />
+                        <textarea placeholder="Add a public comment"></textarea>
+                    </div>
+                    <div id="comment-list">
+                        This is where the comments will go.
+                    </div>
+                 </div>   
             </section>
         </main>
         <script>
@@ -256,6 +262,18 @@
                 downTickButton.style.display = 'block';
                 upTickButton.style.display = 'none';
                 commentListContainer.style.display = 'none';
+            });
+            
+            const seeReponseButtons = document.querySelectorAll('.see-response-container button');
+            
+            seeReponseButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const container = button.parentElement;
+                    const responseList = container.nextElementSibling;
+            
+                    container.style.display = 'none';
+                    responseList.style.display = 'block';
+                });
             });
         </script>
     </body>
